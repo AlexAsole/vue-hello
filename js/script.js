@@ -5,3 +5,4 @@ const app = new Vue ({
     image:'img/ducks.jpg',
   }
 })
+Vue.config.devtools = true;
