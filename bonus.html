@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bonus</title>
+  </head>
+  <body>
+    <div id="first">
+      <h1>{{title}}</h1>
+      <input type="checkbox" v-model="checked" name="" value="">
+      <p>{{prova}}</p>
+      <button @click="provaF">Try</button>
+      <button @click="reverse">Reverse</button>
+
+    </div>
+    <div id="second">
+      <h2 :style="'color:' color">{{title}}</h2>
+    </div>
+
+
+
+
+    <script src="js/bonus.js" charset="utf-8"></script>
+  </body>
+</html>
