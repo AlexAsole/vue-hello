@@ -26,7 +26,24 @@ const second = new Vue ({
   el: '#second',
   data:{
     title: 'Seconda Prova',
-    color: '#00f'
+    color: '#00f',
+    className:'minimize',
+    image: ''
+  },
+  methods:{
+    changeColor: function() {
+      this.color = '#f00'
+    },
+    addClass: function() {
+      this.className = 'maximize'
+    },
+    addImage: function() {
+      if(this.image === '') {
+        this.image = 'img/ducks.jpg'
+      } else {
+        this.image = ''
+      }
+    }
   }
 });
 

@@ -16,7 +16,10 @@
 
     </div>
     <div id="second">
-      <h2 :style="'color:' color">{{title}}</h2>
+      <h2 :style="{color:color}" @click="changeColor">{{title}}</h2>
+      <p :class="className" @click="addClass">Però quanto a te, quanto a quel che non puoi fare che tu, per te qualcosa da poter fare dovrebbe esserci, ma non ti costringera nessuno, pensa da te stesso, decidi da te stesso, quello che adesso tu stesso debba fare e non avere rimpianti.</p>
+      <button @click="addImage">Mostra</button>
+      <img :src="image" alt="">
     </div>
 
 
